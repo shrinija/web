@@ -146,4 +146,63 @@ document.querySelector("a").attributes;
 document.querySelector("a").getAttribute("href");
 document.querySelector("a").setAttribute("href","https://www.bing.com");
 
-//..............................................................................................................................
+//............................................................................................................................
+
+//****************************************************************************************************************************
+
+
+//..............................................................................................................................................................
+
+element.addEventListener("click", myFunction);        
+
+$0.addEventListener(input1,input2);      //The addEventListener() method attaches an event handler to an element. takes 2 input..first..what event it should listen to ..and second..what it should do ones that event gets detected 
+
+//...............
+document.querySelector("button").addEventListener("click",handleclick);   //see we are not using() if we add()then function gets triggered as soon as event listener get added we wanted to trigger when the click happens.. idea of passing input so that it can be called at latter time
+
+function handleclick(){
+  alert("i got clicked");
+}
+
+//we can also do like this....the most common way of doing this .......
+
+document.querySelector("button").addEventListener("click",function(){              // by creating anonymous function
+  alert("i got clicked");
+});
+//...............
+
+
+
+//....................................................................................................................................................................
+//calculator
+
+function add(num1,num2)
+    {
+        return num1+num2;
+    }
+
+function multiply(num1,num2)
+    {
+        return num1*num2;
+    }
+
+function substract(num1,num2){
+    return num1 -num2;
+}
+
+function divide(num1,num2)
+    {
+        return num1/num2;
+    }
+
+function calculator(num1,num2,operator)
+    {
+        return operator(num1,num2);
+    }
+
+calculator(6,3,add);
+calculator(6,3,multiply);
+calculator(6,3,substract);
+calculator(6,3,divide);
+
+//......................................................................................................................
