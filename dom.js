@@ -205,4 +205,50 @@ calculator(6,3,multiply);
 calculator(6,3,substract);
 calculator(6,3,divide);
 
-//......................................................................................................................
+
+//......................................................................................................................................
+
+
+var student={
+ name:"shrinja",
+ age:2,
+ languages:["marathi","hindi","english"]
+}
+
+
+//...........
+
+
+//Constructor function                   // name of the object that it is going to construct have first letter capital
+
+function HouseKeeper (yearsOfExperience,name,cleaningRepertoire){
+ this.yearsOfExperience=yearsOfExperience;
+ this.name=name;
+ this.cleaningRepertoire=cleaningRepertoire;
+}
+
+var HouseKeeper1=new HouseKeeper(9,"tom",["lobby","bedroom"]);
+console.log(HouseKeeper1.name);
+console.log(HouseKeeper1.cleaningRepertoire);
+
+//....................
+
+//methods
+
+function HouseKeeper (yearsOfExperience,name,cleaningRepertoire){
+ this.yearsOfExperience=yearsOfExperience;
+ this.name=name;
+ this.cleaningRepertoire=cleaningRepertoire;
+ this.clean=function(){
+  alert("cleaning in progress");
+ }
+}
+
+HouseKeeper1.clean();
+
+//...............
+
+//callback function
+
+
+
