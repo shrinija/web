@@ -184,6 +184,15 @@ document.querySelector("button").addEventListener("click",function(){           
 
 
 
+//.....................................................
+
+
+
+Higher Order Function 
+--> functions that can take other functions as inputs
+
+
+
 //....................................................................................................................................................................
 //calculator
 
@@ -256,6 +265,22 @@ function HouseKeeper (yearsOfExperience,name,cleaningRepertoire){
 }
 
 HouseKeeper1.clean();
+
+//.........................................
+
+function Audio (fileLocation){
+  this.fileLocation=fileLocation;
+  this.play=function(){
+    //tap into the audio hardware 
+    //check the file at fileLocation exists
+    //check the file at fileLocation is a sound file
+    //play the file at fileLocation
+  }
+}
+
+
+var tom1=new Audio("sounds/tom-1.mp3");
+tom1.play();
 
 //...............
 
