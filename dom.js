@@ -50,11 +50,22 @@ document.firstElementChild.lastElementChild.lastElementChild.lastElementChild.in
 
 document.getElementsByClassName("list");
 
-document.getElementsByTagName("Li");
+document.getElementsByTagName("Li");  //gives array containg all three list items.. means all items with li property...
+
+document.getElementsByTagName("Li").lenght;   //give length of array with tag Li ..
+
+document.getElementByTagName("Li").style.color="red";  // doesent make any sense...because we are to set color of an array.. need to be more specific
+
+document.getElementByTagName("Li")[2].style.color="red";  //seelct item using its index.. now this will work.. will change color of 2 index array element...
+
 
 var arr=document.getElementsByTagName("Li");
 
 
+
+document.getElementsByClassName("btn")[0].style.color="red";    // when ever you have plural in ..like.. Elements.. then you always need to give index.. even if there is only 1 element 
+
+document.getElementById("title").style.color="red";   // here it is ..Element... as there is only one id with one name...so this syntax is correct..
 
 //............
 document.querySelector("li a").style.color="pink";     //more specific  ... this changed colour of that google link
@@ -138,7 +149,7 @@ document.querySelector("h1").textContent;     //gives only text
 
 //for manipulating attributes
 
---> just keep in mind ....attribues are all the things that egt coured in atom
+--> just keep in mind ....attribues are all the things that get coured in orange in atom
 (everything that goes inside tag .. other than tag name itself is an attribute)
 
 document.querySelector("a");
